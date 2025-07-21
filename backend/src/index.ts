@@ -22,7 +22,7 @@ wss.on("connection" , (ws : WebSocket )=> {
        const userMessage = JSON.parse(message.toString())
        if(userMessage.type?.toLowerCase() ==="SUBSCRIBE".toLowerCase()){
         subscription[id].rooms.push(userMessage.roomId) ;
-        console.log("Subscribe to :" , userMessage.roomId)
+        console.log("Subscribe to :" , userMessage.roomId) ;
        }
 
 
